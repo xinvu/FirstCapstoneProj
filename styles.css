@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: #313131;
+}
+
+.top-container{
+    background-color: #414141;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+    gap: 5px;
+}
+.img-wrapper img{
+    height: 200px;
+    width: 200px;
+    padding: 10px;
+}
+.title{
+    font-size: 44px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.text{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 200;
+    margin-top: 0;
+}
+.title span{
+    color: #CA3E47;
+}
+.mid-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    gap:10px;
+}
+.mid-container h2{
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    border-bottom: #fff solid 2px;
+    margin: 10px;
+}
+.grid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 50px;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+}
+.grid .item i{
+    font-size: 100px;
+}
+.bottom-container{
+    width: 100%;
+    background-color: #CA3E47;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+
+}
+.copyright{
+    color: #fff;
+    margin-right: 100px;
+}
+.bottom-container .features{
+    order: 1;
+}
+.features{
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.features a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+/* Responsive */
+@media screen and (max-width:768px) {
+    .img-wrapper img{
+        width: 200px;
+        height: 200px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 15px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .mid-container h2{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:576px) {
+    .img-wrapper img{
+        width: 150px;
+        height: 150px;
+    }
+    .title{
+        font-size: 25px;
+    }
+    .text{
+        font-size: 12px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .grid{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .item{
+        display: flex;
+        height: 50px;
+        width: 50px;
+    }
+    .grid .item i{
+        font-size: 50px;
+    }
+    .mid-container h2{
+        font-size: 25px;
+    }
+}
